@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-const User = require('../models/users');
-const {checkBody} = require('../modules/checkBody')
+const User = require('../../models/users');
+const {checkBody} = require('../../modules/checkBody')
 
 router.post('/signup', (req, res) => {
     User.findOne({ email: req.body.email}).then(dbData => {
