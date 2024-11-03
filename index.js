@@ -3,11 +3,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-require('../models/connection');
+require('./models/connection');
 
-var indexRouter = require('./routes/home');
-var weatherRouter = require('./routes/weather');
-var usersRouter = require('./routes/users')
+var indexRouter = require('./api/routes/home');
+var weatherRouter = require('./api/routes/weather');
+var usersRouter = require('./api/routes/users')
 
 var app = express();
 
