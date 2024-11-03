@@ -5,7 +5,7 @@ var logger = require('morgan');
 
 require('./models/connection');
 
-var indexRouter = require('./routes');
+var indexRouter = require('./routes/index');
 var weatherRouter = require('./routes/weather');
 var usersRouter = require('./routes/users')
 
